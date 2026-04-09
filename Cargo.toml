@@ -1,0 +1,15 @@
+[package]
+name = "jopa"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio={version = "*",features = ["full"]}
+axum="*"
+sqlx={version = "*",features = ["runtime-tokio","postgres","chrono"]}
+serde={version = "*",features = ["derive"]}
+serde_json="*"
+chrono={version = "*",features = ["serde"]}
+dotenvy="*"
+lapin="*"
+futures-util="*"
